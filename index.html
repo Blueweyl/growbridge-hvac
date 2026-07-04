@@ -154,6 +154,10 @@
   .pillar-icon{ width:40px; height:40px; border-radius:8px; background:var(--frost); opacity:.16; }
   .pillar-card h3{ font-size:20px; }
   .pillar-card p{ color:var(--ink-soft); font-size:15px; }
+  .pillar-card ul{ list-style:none; margin:4px 0 0; padding:0; }
+  .pillar-card li{ position:relative; padding:7px 0 7px 18px; font-size:14.5px; color:var(--ink-soft); border-top:1px solid var(--line); }
+  .pillar-card li:first-child{ border-top:none; }
+  .pillar-card li:before{ content:"—"; position:absolute; left:0; color:var(--frost-ink); }
   .also-included{ margin-top:30px; padding-top:26px; border-top:1px solid var(--line); }
   .also-included .lbl{ font-family:'IBM Plex Mono',monospace; font-size:12.5px; text-transform:uppercase; letter-spacing:.1em; color:var(--ink-soft); margin-bottom:14px; }
   .chip-row{ display:flex; flex-wrap:wrap; gap:10px; }
@@ -215,9 +219,8 @@
   <div class="topbar-inner">
     <a class="wordmark" href="#top">GROWBRIDGE<span> HVAC</span></a>
     <ul class="navlinks">
-      <li><a href="#the-problem">The Problem</a></li>
-      <li><a href="#how-it-works">How It Works</a></li>
       <li><a href="#what-you-get">What You Get</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
       <li><a href="#pricing">Pricing</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
@@ -231,11 +234,11 @@
   <div class="shell hero-grid">
     <div>
       <span class="eyebrow">Built for 3–15 tech HVAC shops</span>
-      <h1 class="hero-title">Run your shop off a board that works — not a <em>whiteboard</em>.</h1>
-      <p class="hero-sub">GrowBridge HVAC replaces the whiteboard, the spreadsheet, and the sticky notes with one board that dispatches jobs, tracks your PM contracts, and invoices the moment a job's done.</p>
+      <h1 class="hero-title">One board. Dispatch, PM contracts, and invoicing — <em>done</em>.</h1>
+      <p class="hero-sub">GrowBridge HVAC is dispatch, membership tracking, and same-day invoicing built into one board for a 3–15 technician shop — no whiteboard, no spreadsheet, no enterprise price tag.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="#pricing">Book a Call</a>
-        <a class="btn btn-ghost" href="#what-you-get">See How PM Tracking Works</a>
+        <a class="btn btn-ghost" href="#what-you-get">See What's Included</a>
       </div>
       <div class="stat-strip" role="group" aria-label="Key product numbers">
         <div class="stat-cell"><div class="num">15–25 → SAME DAY</div><div class="lbl">typical invoice delay, closed</div></div>
@@ -249,10 +252,88 @@
   </div>
 </header>
 
+<section id="what-you-get" class="alt">
+  <div class="shell">
+    <div class="sec-head">
+      <span class="eyebrow">What you get</span>
+      <h2>Everything below replaces the whiteboard.</h2>
+      <p>Three things, done well, in the base build — plus what plugs in as you grow.</p>
+    </div>
+    <div class="card-grid-3">
+      <div class="pillar-card">
+        <div class="pillar-icon" aria-hidden="true"></div>
+        <h3>Dispatch Board</h3>
+        <p>The live, drag-and-drop board that replaces the whiteboard and the phone calls.</p>
+        <ul>
+          <li>Drag-and-drop technician assignment</li>
+          <li>Real-time status: scheduled → en route → in progress → completed</li>
+          <li>Today's-jobs view built for a 5-person office</li>
+          <li>Customer &amp; property history on every job</li>
+        </ul>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon" aria-hidden="true"></div>
+        <h3>Membership &amp; PM Tracking</h3>
+        <p>The recurring-revenue engine that protects your $5K–$15K contracts.</p>
+        <ul>
+          <li>Plan catalog with automatic renewal billing</li>
+          <li>Visit-due list — nothing slips past the calendar</li>
+          <li>Every contract tracked by customer, not spreadsheet</li>
+          <li>Renewal reminders sent automatically</li>
+        </ul>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon" aria-hidden="true"></div>
+        <h3>Same-Day Invoicing</h3>
+        <p>The billing engine that closes the 15–25 day cash-flow gap.</p>
+        <ul>
+          <li>Draft invoice generated the moment a job's marked complete</li>
+          <li>Line items pulled straight from your price book</li>
+          <li>No more paperwork sitting on a truck seat</li>
+          <li>Sent same day, not fifteen days later</li>
+        </ul>
+      </div>
+    </div>
+    <div class="also-included">
+      <div class="lbl mono">ALSO INCLUDED AS THE BUILD GROWS</div>
+      <div class="chip-row">
+        <span class="chip">QuickBooks sync</span>
+        <span class="chip">Financed-job status tracker</span>
+        <span class="chip">SMS reminders &amp; on-my-way texts</span>
+        <span class="chip">Truck stock tracking</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how-it-works">
+  <div class="shell">
+    <div class="sec-head">
+      <span class="eyebrow">The plan</span>
+      <h2>Three moves. Not a rollout.</h2>
+      <p>No training week. No project manager. Three concrete changes, in order.</p>
+    </div>
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-num mono">01</div>
+        <div><h3>Move the board online</h3><p>The dispatch board replaces the whiteboard on day one — drag, drop, done.</p></div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-num mono">02</div>
+        <div><h3>Let PM contracts track themselves</h3><p>Renewal dates and visit-due lists run automatically — no more sticky notes on the monitor.</p></div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-num mono">03</div>
+        <div><h3>Invoice the day the job's done</h3><p>A draft invoice generates the moment a job's marked complete. No truck-seat paperwork lag.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="the-problem" class="alt">
   <div class="shell">
     <div class="sec-head">
-      <span class="eyebrow">Why this exists</span>
+      <span class="eyebrow">Why it matters</span>
       <h2>You didn't start a whiteboard business.</h2>
       <p>Somewhere between the third truck and the tenth PM contract, the whiteboard stopped working. You know it. Your dispatcher knows it. And the two options everyone hands you — keep duct-taping spreadsheets together, or buy software built for a 50-truck operation — both feel wrong. Because they are.</p>
     </div>
@@ -297,66 +378,6 @@
           <tr><td>Same-day invoicing</td><td class="no">No</td><td class="no">Rarely</td><td class="yes grow-col">Yes</td></tr>
         </tbody>
       </table>
-    </div>
-  </div>
-</section>
-
-<section id="how-it-works" class="alt">
-  <div class="shell">
-    <div class="sec-head">
-      <span class="eyebrow">The plan</span>
-      <h2>Three moves. Not a rollout.</h2>
-      <p>No training week. No project manager. Three concrete changes, in order.</p>
-    </div>
-    <div class="plan-list">
-      <div class="plan-item">
-        <div class="plan-num mono">01</div>
-        <div><h3>Move the board online</h3><p>The dispatch board replaces the whiteboard on day one — drag, drop, done.</p></div>
-      </div>
-      <div class="plan-item">
-        <div class="plan-num mono">02</div>
-        <div><h3>Let PM contracts track themselves</h3><p>Renewal dates and visit-due lists run automatically — no more sticky notes on the monitor.</p></div>
-      </div>
-      <div class="plan-item">
-        <div class="plan-num mono">03</div>
-        <div><h3>Invoice the day the job's done</h3><p>A draft invoice generates the moment a job's marked complete. No truck-seat paperwork lag.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="what-you-get">
-  <div class="shell">
-    <div class="sec-head">
-      <span class="eyebrow">What you get</span>
-      <h2>What's actually in the build.</h2>
-      <p>Three things, done well — plus what plugs in as you grow.</p>
-    </div>
-    <div class="card-grid-3">
-      <div class="pillar-card">
-        <div class="pillar-icon" aria-hidden="true"></div>
-        <h3>Dispatch Board</h3>
-        <p>Drag-and-drop technician assignment, real-time status, a today's-jobs view built for a 5-person office.</p>
-      </div>
-      <div class="pillar-card">
-        <div class="pillar-icon" aria-hidden="true"></div>
-        <h3>Membership &amp; PM Tracking</h3>
-        <p>Plan catalog, automatic renewal, and a visit-due list — so a $5K–$15K contract never slips through.</p>
-      </div>
-      <div class="pillar-card">
-        <div class="pillar-icon" aria-hidden="true"></div>
-        <h3>Same-Day Invoicing</h3>
-        <p>A draft invoice generates the moment a job's marked complete — no more paperwork sitting on a truck seat.</p>
-      </div>
-    </div>
-    <div class="also-included">
-      <div class="lbl mono">ALSO INCLUDED AS THE BUILD GROWS</div>
-      <div class="chip-row">
-        <span class="chip">QuickBooks sync</span>
-        <span class="chip">Financed-job status tracker</span>
-        <span class="chip">SMS reminders &amp; on-my-way texts</span>
-        <span class="chip">Truck stock tracking</span>
-      </div>
     </div>
   </div>
 </section>
@@ -470,9 +491,8 @@
   <div class="shell footer-inner">
     <a class="wordmark" href="#top">GROWBRIDGE<span> HVAC</span></a>
     <ul class="navlinks">
-      <li><a href="#the-problem">The Problem</a></li>
-      <li><a href="#how-it-works">How It Works</a></li>
       <li><a href="#what-you-get">What You Get</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
       <li><a href="#pricing">Pricing</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
